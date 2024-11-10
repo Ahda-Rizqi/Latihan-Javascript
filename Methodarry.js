@@ -154,9 +154,11 @@
 // Penjelasan:
 // sort() mengubah array asli.
 // Untuk urutan numerik, perlu memberikan fungsi pembanding, seperti a - b.
+
+
+
 // 12. filter()
 // Deskripsi: Membuat array baru dengan elemen-elemen yang lolos dari kondisi yang ditentukan.
-
 // array.filter(function(element, index, array) { ... });
 // Contoh:
 // let numbers = [1, 2, 3, 4, 5];

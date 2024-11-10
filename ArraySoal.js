@@ -27,6 +27,19 @@ var tambahPenumpang = function (namaPenumpang, penumpang) {
     return penumpang;
   }
 };
-
-console.log(tambahPenumpang("ahda", penumpang));
-console.log(tambahPenumpang("ahda", penumpang));
+let hapuspenumpang = function (namapenumpang, penumpang) {
+  if (penumpang.length == 0) {
+    console.log("Angkot sedang kosong");
+  } else {
+    for (let i = 0; i < penumpang.length; i++) {
+      if (penumpang[i] == namapenumpang) {
+        penumpang.splice(i, 1, undefined);
+        return penumpang;
+      } else if (i == penumpang.length - 1) {
+        console.log(namapenumpang + " tidak ada di dalam angkot");
+        return penumpang;
+      }
+    }
+  }
+  return penumpang;
+};
