@@ -7,8 +7,6 @@
 //Penjelasan:
 // .length adalah properti bukan metode. Ini memberi tahu kita berapa banyak elemen yang ada di array.
 
-
-
 // 2. join()
 // Deskripsi: Menggabungkan semua elemen dalam array menjadi satu string. Pemisah antara elemen bisa ditentukan.
 // array.join(separator);
@@ -20,7 +18,6 @@
 // Jika tidak memberikan separator, secara default join() akan memisahkan elemen dengan koma (,).
 // Kamu bisa menentukan separator, misalnya spasi atau tanda hubung.
 
-
 // 3. push()
 // Deskripsi: Menambahkan satu atau lebih elemen ke akhir array dan mengembalikan panjang array yang baru.
 // array.push(element1, element2, ...);
@@ -31,9 +28,6 @@
 // Penjelasan:
 // push() menambahkan elemen ke akhir array.
 // Array akan bertambah panjang dengan bertambahnya elemen.
-
-
-
 
 // 4. pop()
 // Deskripsi: Menghapus elemen terakhir dari array dan mengembalikan elemen yang dihapus.
@@ -47,8 +41,6 @@
 // pop() menghapus elemen terakhir dan mengembalikan elemen tersebut.
 // Panjang array akan berkurang satu elemen.
 
-
-
 // 5. shift()
 // Deskripsi: Menghapus elemen pertama dari array dan mengembalikan elemen yang dihapus.
 // array.shift();
@@ -60,9 +52,6 @@
 // Penjelasan:
 // shift() menghapus elemen pertama dan mengembalikan elemen tersebut.
 // Panjang array berkurang satu elemen.
-
-
-
 
 // 6. unshift()
 // Deskripsi: Menambahkan satu atau lebih elemen ke awal array dan mengembalikan panjang array yang baru.
@@ -76,8 +65,6 @@
 // unshift() menambahkan elemen ke depan array, sehingga array berubah urutannya.
 // Panjang array bertambah.
 
-
-
 // 7. slice()
 // Deskripsi: Mengambil sebagian array dan mengembalikannya sebagai array baru, tanpa mengubah array asli.
 // array.slice(start, end);
@@ -90,9 +77,6 @@
 // slice() mengembalikan elemen dari start hingga end - 1.
 // Array asli tidak berubah.
 
-
-
-
 // 8. splice()
 // Deskripsi: Menambahkan, menghapus, atau mengganti elemen dalam array pada posisi yang ditentukan.
 // array.splice(start, deleteCount, item1, item2, ...);
@@ -103,10 +87,6 @@
 // Penjelasan:
 // splice() memungkinkan untuk menambah, menghapus, atau mengganti elemen mulai dari indeks start.
 // deleteCount menentukan jumlah elemen yang akan dihapus.
-
-
-
-
 
 // 9. forEach()
 // Deskripsi: Menjalankan fungsi untuk setiap elemen dalam array.
@@ -123,10 +103,6 @@
 // Penjelasan:
 // forEach() mengeksekusi fungsi untuk setiap elemen di array. Tidak mengembalikan nilai apa pun.
 
-
-
-
-
 // 10. map()
 // Deskripsi: Membuat array baru dengan hasil pemrosesan elemen dari array asli.
 // array.map(function(element, index, array) { ... });
@@ -138,9 +114,6 @@
 // console.log(doubled);  // Output: [2, 4, 6, 8]
 // Penjelasan:
 // map() membuat array baru yang berisi hasil dari fungsi yang diterapkan pada setiap elemen.
-
-
-
 
 // 11. sort()
 // Deskripsi: Mengurutkan elemen dalam array secara ascending (naik) secara default, atau sesuai dengan fungsi perbandingan yang diberikan.
@@ -155,8 +128,6 @@
 // sort() mengubah array asli.
 // Untuk urutan numerik, perlu memberikan fungsi pembanding, seperti a - b.
 
-
-
 // 12. filter()
 // Deskripsi: Membuat array baru dengan elemen-elemen yang lolos dari kondisi yang ditentukan.
 // array.filter(function(element, index, array) { ... });
@@ -169,9 +140,6 @@
 //Penjelasan:
 // filter() mengembalikan array baru yang berisi elemen-elemen yang memenuhi kondisi tertentu.
 
-
-
-
 // 13. find()
 // Deskripsi: Mencari dan mengembalikan elemen pertama yang memenuhi kondisi tertentu.
 // array.find(function(element, index, array) { ... });
@@ -183,3 +151,7 @@
 // console.log(firstEven);  // Output: 2
 //Penjelasan:
 // find() hanya mengembalikan elemen pertama yang memenuhi kondisi. Jika tidak ada yang memenuhi, mengembalikan undefined.
+
+// objek
+
+// didalm objek,karena objek tersebut sudah didefinisikan maka konteks this disini itu mengembalikan isi dari objek tersebut,kalau fungsi global,ketika dia tidak berada didalam objek atau konstuktor dia akan menjadi window(window === this) ,kalau konstruktor dia akan mejadi penunjuk arah / membantu agar konstruktor terjadi,sedangkan arrow function itu
